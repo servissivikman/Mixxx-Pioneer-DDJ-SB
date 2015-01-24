@@ -2,7 +2,7 @@
 
 ## Description 
 
-This is a basic mapping for Mixxx for the Pioneer DDJ-SB for 2 decks. The code is based on / forked from hrudham's project: Mixxx-Pioneer-DDJ-SR (https://github.com/hrudham/Mixxx-Pioneer-DDJ-SR). I've used the same methods but stripped it a bit so it works for my DDJ-SB and also, so the code is understandable to me. I'd like to understand what I implement. So I might have deleted some cool functionality from the original project... 
+This is a basic mapping for Mixxx for the Pioneer DDJ-SB (2 decks). The code is based on / forked from hrudham's project: Mixxx-Pioneer-DDJ-SR (https://github.com/hrudham/Mixxx-Pioneer-DDJ-SR). I've used the same methods but stripped it a bit so it works for my DDJ-SB and also, so the code is understandable to me. I'd like to understand what I implement. So I might have deleted some cool functionality from the original project... 
 
 * It requires v1.11. Certain functionality will NOT work in previous versions.
 
@@ -11,8 +11,8 @@ This is a basic mapping for Mixxx for the Pioneer DDJ-SB for 2 decks. The code i
 If you just want to get your controller working with with Mixxx without bothering about the details much, then do the following:
 
 1. Download the following two files:
-    - [PIONEER-DDJ-SB.midi.xml]
-    - [PIONEER-DDJ-SB-scripts.js]
+    - [PIONEER-DDJ-SB.midi.xml] (https://github.com/wingcom/Mixxx-Pioneer-DDJ-SB/blob/master/Pioneer-DDJ-SB.midi.xml)
+    - [PIONEER-DDJ-SB-scripts.js] (https://github.com/wingcom/Mixxx-Pioneer-DDJ-SB/blob/master/Pioneer-DDJ-SB-scripts.js)
 2. Copy these to the `[Mixxx Directory]/controllers` folder. This will probably be one of the following locations:
     - Windows: `C:\Program Files\Mixxx\controllers`
     - Linux: `/usr/share/mixxx/controllers or /usr/local/share/mixxx/controllers`
