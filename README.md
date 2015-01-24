@@ -62,7 +62,7 @@ I've only implemented what I need and "know of" for now...
 	interactions are disabled in this mode.
 
 	- NORMAL MODE (when playing)
-		- PPitchbend using the side of the Jogwheel
+		- Pitchbend using the side of the Jogwheel
 	- NORMAL MODE (when not playing)
 		- Scratching / Seeking when turning the Jogwheel surface
 		  I've switched this to Scratchmode, it makes seeking by using the jogwheels quicker.
