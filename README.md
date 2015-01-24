@@ -31,33 +31,32 @@ I've only implemented what I need and "know of" for now...
     - Manual Filtering
 	High, Mid and Low
     - Playlist browsing
-	Back : switches between Tracklist and Sidebar
-	RoatrySelector : browses through the Tracklist of the Sidebar
-	RotarySelectorClick : Expands or Collapses the Sidebar item
-	Load : loads the selected track in the Left or Right deck
+    	- Back : switches between Tracklist and Sidebar
+    	- RoatrySelector : browses through the Tracklist of the Sidebar
+    	- RotarySelectorClick : Expands or Collapses the Sidebar item
+    	- Load : loads the selected track in the Left or Right deck
     - Sampler Control
-	Push : Starts playing the sample from start
-	Shift-Push : Stop playing the sample
+    	- Push : Starts playing the sample from start
+    	- Shift-Push : Stop playing the sample
     - Pitch Control 
-	Inverted. With my current skin I can not get this to work as intended even if I change the setting
+    	- Inverted. With my current skin I can not get this to work as intended even if I change the setting
 - Deck Controls
     - Play / Pause / Cue
-	Cue: Sets the Cuepoint when not playing, Jumps to Cuepoint when playing
+    	- Cue: Sets the Cuepoint when not playing, Jumps to Cuepoint when playing
     - Vinyl Mode
     - Keylock
     - Precue'ing
     - Hotcue Control (4 can be set)
-	Push: Sets the hotcue and lights up the LED of the pushed button.
-	Push again: Turn of the hotcue point
+    	- Push: Sets the hotcue and lights up the LED of the pushed button.
+    	- Push again: Turn of the hotcue point
     - Autoloop Control
-	4 Autoloops can be set (no shift use on Performance Pads yet) on: 
-		1 beat / 2 beats / 4 beats and 8 beats
-	If you want other beatloops you need to change the xml and the LoopInterval Enum in the Init() function
+    	- 4 Autoloops can be set (no shift use on Performance Pads yet) on: 1 beat / 2 beats / 4 beats and 8 beats
+    	- If you want other beatloops you need to change the xml and the LoopInterval Enum in the Init() function
     - Manual loop Control (still buggy)
-	In   : Sets in point
-	Out  : Sets out point
-	Exit : Not working yet. Pretty annoying :)
-	1/2  : Cut loop in half
+    	- In   : Sets in point
+    	- Out  : Sets out point
+    	- Exit : Not working yet. Pretty annoying :)
+    	- 1/2  : Cut loop in half
     - Jogwheel Control
 	When playing in normal mode, only touching/turning the side will result in pichbend. All other 
 	interactions are disabled in this mode.
