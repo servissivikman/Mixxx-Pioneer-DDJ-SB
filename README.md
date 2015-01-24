@@ -5,6 +5,7 @@
 This is a basic mapping for Mixxx for the Pioneer DDJ-SB (2 decks). The code is based on / forked from hrudham's project: Mixxx-Pioneer-DDJ-SR (https://github.com/hrudham/Mixxx-Pioneer-DDJ-SR). I've used the same methods but stripped it a bit so it works for my DDJ-SB and also so the code is understandable to me. I like to understand what I implement. So I might have deleted some cool functionality from the original project ...
 
 * It requires v1.11. Certain functionality will NOT work in previous versions.
+* Forum Thread on mixxx.org -> http://www.mixxx.org/forums/viewtopic.php?f=6&t=6886
 
 ## How do I use it?
 
