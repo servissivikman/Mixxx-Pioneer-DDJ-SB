@@ -57,6 +57,15 @@
 			</control>
 			<control>
 				<group>[Channel1]</group>
+				<key>pregain</key>
+				<status>0xB6</status>
+				<midino>0x17</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
 				<key>pfl</key>
 				<status>0x90</status>
 				<midino>0x54</midino>
@@ -96,6 +105,15 @@
 				<key>filterLow</key>
 				<status>0xB1</status>
 				<midino>0x0F</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>pregain</key>
+				<status>0xB6</status>
+				<midino>0x18</midino>
 				<options>
 					<soft-takeover />
 				</options>
@@ -426,7 +444,7 @@
 			</control>
 			<control>
 				<group>[Channel1]</group>
-				<key>beatloop_1_toggle</key>
+				<key>beatloop_2_toggle</key>
 				<status>0x97</status>
 				<midino>0x10</midino>
 				<options>
@@ -435,7 +453,7 @@
 			</control>
 			<control>
 				<group>[Channel1]</group>
-				<key>beatloop_2_toggle</key>
+				<key>beatloop_4_toggle</key>
 				<status>0x97</status>
 				<midino>0x11</midino>
 				<options>
@@ -444,7 +462,7 @@
 			</control>
 			<control>
 				<group>[Channel1]</group>
-				<key>beatloop_4_toggle</key>
+				<key>beatloop_8_toggle</key>
 				<status>0x97</status>
 				<midino>0x12</midino>
 				<options>
@@ -453,7 +471,7 @@
 			</control>
 			<control>
 				<group>[Channel1]</group>
-				<key>beatloop_8_toggle</key>
+				<key>beatloop_16_toggle</key>
 				<status>0x97</status>
 				<midino>0x13</midino>
 				<options>
@@ -642,7 +660,7 @@
 			</control>
 			<control>
 				<group>[Channel2]</group>
-				<key>beatloop_1_toggle</key>
+				<key>beatloop_2_toggle</key>
 				<status>0x98</status>
 				<midino>0x10</midino>
 				<options>
@@ -651,7 +669,7 @@
 			</control>
 			<control>
 				<group>[Channel2]</group>
-				<key>beatloop_2_toggle</key>
+				<key>beatloop_4_toggle</key>
 				<status>0x98</status>
 				<midino>0x11</midino>
 				<options>
@@ -660,7 +678,7 @@
 			</control>
 			<control>
 				<group>[Channel2]</group>
-				<key>beatloop_4_toggle</key>
+				<key>beatloop_8_toggle</key>
 				<status>0x98</status>
 				<midino>0x12</midino>
 				<options>
@@ -669,7 +687,7 @@
 			</control>
 			<control>
 				<group>[Channel2]</group>
-				<key>beatloop_8_toggle</key>
+				<key>beatloop_16_toggle</key>
 				<status>0x98</status>
 				<midino>0x13</midino>
 				<options>
