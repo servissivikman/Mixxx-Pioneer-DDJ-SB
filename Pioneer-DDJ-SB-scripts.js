@@ -34,10 +34,10 @@ PioneerDDJSB.init = function(id)
 	
 	PioneerDDJSB.loopIntervals =
 	{
-		PAD1: 1, 
-		PAD2: 2, 
-		PAD3: 4, 
-		PAD4: 8
+		PAD1: 2, 
+		PAD2: 4, 
+		PAD3: 8, 
+		PAD4: 16
 	};
 	
 	PioneerDDJSB.rotarySelectorTargets =
@@ -62,6 +62,12 @@ PioneerDDJSB.BindControlConnections = function(isUnbinding)
 	for (var channelIndex = 1; channelIndex <= 2; channelIndex++)
 	{
 		var channelGroup = '[Channel' + channelIndex + ']';
+		
+		if(isUnbinding)
+		{
+			PioneerDDJSB.KeyLockLeds(false, channelGroup);
+			PioneerDDJSB.ToggleVinylLed(false, channelGroup);
+		}
 		
 		// Play / Pause LED
 		engine.connectControl(channelGroup, 'play', 'PioneerDDJSB.PlayLeds', isUnbinding);
@@ -97,36 +103,38 @@ PioneerDDJSB.BindControlConnections = function(isUnbinding)
 ///////////////////////////////////////////////////////////////
 
 // This handles LEDs related to the PFL / Headphone Cue event.
-PioneerDDJSB.HeadphoneCueLed = function(value, group, control) 
+PioneerDDJSB.HeadphoneCueLed = function(value, group) 
 {
 	var channel = PioneerDDJSB.channelGroups[group];	
 	midi.sendShortMsg(0x90 + channel, 0x54, value ? 0x7F : 0x00); // Headphone Cue LED
 };
 
 // This handles LEDs related to the cue_default event.
-PioneerDDJSB.CueLeds = function(value, group, control) 
+PioneerDDJSB.CueLeds = function(value, group) 
 {
 	var channel = PioneerDDJSB.channelGroups[group];	
 	midi.sendShortMsg(0x90 + channel, 0x0C, value ? 0x7F : 0x00); // Cue LED
 };
 
 // This handles LEDs related to the keylock event.
-PioneerDDJSB.KeyLockLeds = function(value, group, control) 
+PioneerDDJSB.KeyLockLeds = function(value, group) 
 {
 	var channel = PioneerDDJSB.channelGroups[group];	
 	midi.sendShortMsg(0x90 + channel, 0x1A, value ? 0x7F : 0x00); // Keylock LED
 };
 
 // This handles LEDs related to the play event.
-PioneerDDJSB.PlayLeds = function(value, group, control) 
+PioneerDDJSB.PlayLeds = function(value, group) 
 {
 	var channel = PioneerDDJSB.channelGroups[group];	
 	midi.sendShortMsg(0x90 + channel, 0x0B, value ? 0x7F : 0x00); // Play / Pause LED
 	midi.sendShortMsg(0x90 + channel, 0x0C, value ? 0x7F : 0x00); // Cue LED
 };
 
-PioneerDDJSB.ToggleVinylLed = function(value, group, control) 
+PioneerDDJSB.ToggleVinylLed = function(value, group) 
 {
+	print("Toggle VinylLed");
+	
 	var channel = PioneerDDJSB.channelGroups[group];
 	midi.sendShortMsg(0x90 + channel, 0x17, value ? 0x7F : 0x00); // Vinyl LED
 };
@@ -137,6 +145,9 @@ PioneerDDJSB.ToggleVinylLed = function(value, group, control)
 // the xml and the enumaration in the config/init setings
 PioneerDDJSB.RollPerformancePadLed = function(value, group, control) 
 {
+	if (value == 0x00)
+		return;
+		
 	var channel = PioneerDDJSB.channelGroups[group];
 	for (var i = 1; i <= PioneerDDJSB.settings['numberOfActivePerformancePads']; i++)
 	{
