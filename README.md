@@ -1,5 +1,10 @@
 # Pioneer DDJ-SB MIDI Mapping for Mixxx
 
+****** IMPORTANT NOTICE *******
+There is a new fork available for this project: https://github.com/jardiacaj/mixxx
+I recommand installing this one and start testing this and give feedback to jardiacaj on github
+This version has way more functionality then my version. Check it, test it. Thanks
+
 ## Description 
 
 This is a basic mapping for Mixxx for the Pioneer DDJ-SB (2 decks). The code is based on / forked from hrudham's project: Mixxx-Pioneer-DDJ-SR (https://github.com/hrudham/Mixxx-Pioneer-DDJ-SR). I've used the same methods but stripped it a bit so it works for my DDJ-SB and also so the code is understandable to me. I like to understand what I implement. So I might have deleted some cool functionality from the original project ...
