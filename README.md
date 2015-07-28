@@ -1,6 +1,7 @@
 # Pioneer DDJ-SB MIDI Mapping for Mixxx
 
 ****** IMPORTANT NOTICE *******
+
 There is a new fork available for this project: https://github.com/jardiacaj/mixxx
 
 I recommend installing this one and start testing this and give feedback to jardiacaj on github
