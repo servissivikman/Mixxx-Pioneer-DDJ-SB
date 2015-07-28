@@ -2,7 +2,9 @@
 
 ****** IMPORTANT NOTICE *******
 There is a new fork available for this project: https://github.com/jardiacaj/mixxx
+
 I recommend installing this one and start testing this and give feedback to jardiacaj on github
+
 This version has way more functionality then my version. Check it, test it. Thanks
 
 ## Description 
